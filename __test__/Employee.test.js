@@ -25,7 +25,24 @@ test("create a new Employee object", () => {
   
   test("get name when I call getName()", () => {
     const testValue = "Liz";
-    const e = new Employee(testValue);
-    expect(e.getName()).toBe(testValue);
+    const employee = new Employee(testValue);
+    expect(employee.getName()).toBe(testValue);
   });
   
+  test("get name when I call getId()", () => {
+    const testValue = 100;
+    const employee = new Employee("Foo", testValue);
+    expect(employee.getId()).toBe(testValue);
+  });
+  
+  test("get email when I call getEmail()", () => {
+    const testValue = "email@email.com";
+    const employee = new Employee("Foo", 1, testValue);
+    expect(employee.getEmail()).toBe(testValue);
+  });
+  
+  test("getRole() returns 'Employee'", () => {
+    const testValue = "Employee";
+    const employee = new Employee("Liz", 1, "email@email.com");
+    expect(employee.getRole()).toBe(testValue);
+  });
