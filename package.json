@@ -1,0 +1,30 @@
+{
+  "name": "my-team-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizariasc/my-team-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizariasc/my-team-generator/issues"
+  },
+  "homepage": "https://github.com/lizariasc/my-team-generator#readme",
+  "devDependencies": {
+    "jest": "^27.0.4"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.1",
+    "util": "^0.12.4"
+  }
+}
