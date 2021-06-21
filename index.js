@@ -105,7 +105,7 @@ async function createHTML(html) {
 }
 
 async function init() {
-    console.log("Please build your team");
+    console.log("Let's start building your team!");
     await addRole("Manager");
     let member = "";
     let exit = "I don't want to add anymore team members";
