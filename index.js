@@ -1,7 +1,11 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const util = require('util');
 
+const readFile = util.promisify(fs.readFile);
+const writeFile = util.promisify(fs.writeFile);
 
+const timestamp = require("./lib/timestamp");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
@@ -95,7 +99,7 @@ async function generateHTML() {
 async function createHTML(html) {
     console.log("Creating HTML...");
     let file = `team-${timestamp()}.html`;
-    let dir = "./output";
+    let dir = "./dist";
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir);
     }
