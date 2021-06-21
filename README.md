@@ -21,12 +21,12 @@ The user needs to have Node.js installed, clone the repo, run `npm init` and npm
 Contributor Covenant.
 
 ## Tests
-Test-driven-development was used to test classes constructors using jest. Use `npm run test` to use it. 
+Test-driven-development was used to test classes constructors using jest. After installing jest, use `npm run test` to run it.
 
 ## Questions
 If you have any questions about this project, send me an email at lizethariasc14@gmail.com or contact me through my [GitHub](https://github.com/lizariasc).
 
-## Demo video
+## Walkthrough video demostrating the functionality 
 https://drive.google.com/file/d/1bFggJSMqYTCUvd8MugiDvi2zEoPj8Ufb/view
 
 ## Mockup of a sample HTML 
